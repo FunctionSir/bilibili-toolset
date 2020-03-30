@@ -5,7 +5,8 @@ g=get b=bilibili v=video i=information
 支持AID，BVID。
 ## 离线AV/BV号转换（LIB，libabe.py）
 lib=lib a=av b=bv e=exchange
-算法是mcfx在知乎https://www.zhihu.com/question/381784377里的以WTFPL开源的。此处有些改动。
+算法是mcfx在知乎https://www.zhihu.com/question/381784377
+里的以WTFPL开源的。此处有些改动。
 ## 自动离线算法正确性测试器（#2TOOL，checker.py）
 测试B站算法是否改动，若改动或离线的算法（mcfx编写并以WTFPL开源）已经不适宜B站，那么会报错。
 注意：不要试图太快！容易封IP。
