@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import requests
-import os
-import time
 import random
 import json
-from xml.dom.minidom import Document
+import time
 base = 'https://api.bilibili.com/x/web-interface/view?'
 ua = [
     'User-Agent,Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
@@ -15,7 +13,7 @@ ua = [
     'User-Agent,Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5',
     'User-Agent,Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/20.0.019; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.18124'
 ]  # UA信息来自http://tools.jb51.net/table/useragent，感谢！
-print('BILIBILI VIDEO TOOL BASED ON API')
+print('BILIBILI VIDEO TOOL BASED ON BILIBILI API')
 print('VER 5-ATNO3 BY FUNCTIONSIR')
 s_ua = 'R'
 s_ua = input('您想使用哪个UA？或让计算机帮你选？ R(r)=自动选择 0～5对应6个UA [R(r)/0~5]>')
@@ -48,7 +46,7 @@ print('[I]收到服务器发回的内容。[\n'+response.text+'\n]')
 jdata = json.loads(response.text)
 bili_v_head = 'https://www.bilibili.com/video/'
 print('[I]JSON解码完成。')
-print('----------------------')
+print('-----------------------')
 print('视频信息')
 print('访问地址[\n'+bili_v_head+jdata['data']['bvid']+'\n'+bili_v_head+'av'+str(jdata['data']['aid']),'\n]')
 print('标题[',jdata['data']['title'],']')
@@ -65,7 +63,7 @@ print('收藏数[',jdata['data']['stat']['favorite'],']')
 print('分享数[',jdata['data']['stat']['share'],']')
 print('评论数[',jdata['data']['stat']['reply'],']')
 print('封面图[\n'+jdata['data']['pic']+'\n]')
-print('UP主基本信息（详情请用GBUPI工具）')
+print('UP主基本信息（详情请用GBUPI工具-COMMING SOON!）')
 print('昵称[',jdata['data']['owner']['name'],']')
 print('UID[',jdata['data']['owner']['mid'],']')
 print('头像[\n'+jdata['data']['owner']['face']+'\n]')
