@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#本算法是mcfx在知乎https://www.zhihu.com/question/381784377里的，以WTFPL开源。此处有些改动。
+#本算法是mcfx在知乎https://www.zhihu.com/question/381784377里的以WTFPL开源的。此处有些改动。
 table='fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
 tr={}
 for i in range(58):
