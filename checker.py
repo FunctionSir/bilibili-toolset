@@ -23,7 +23,7 @@ def do(a,b):
             p = input('[I]PRESS ENTER TO CONTINUE, PRESS CTRL+C TO STOP.')
 print('BILIBILI VIDEO TOOL')
 print('VER 5-ATNO3 BY FUNCTIONSIR')
-print('BVENC/DEC-AUTO-API-OFFLINE-TESTER\n[W]MAY BE BANED BY BILIBILI! CHANGE YOUR IP ADDR IF THAT HAPPENS!')
+print('BVENC/DEC-AUTO-API-OFFLINE-TESTER\n[W][I]CHANGE YOUR IP ADDR IF BANED BY BILIBILI.')
 a = 0
 base = 'https://api.bilibili.com/x/web-interface/view?'
 ua = [

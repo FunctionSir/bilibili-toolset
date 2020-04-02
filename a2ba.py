@@ -19,7 +19,7 @@ def do(a,ua):
             print('av'+str(a),'=',jdata['data']['bvid'])
 print('BILIBILI VIDEO TOOL ATBA')
 print('VER 5-ATNO3 BY FUNCTIONSIR')
-print('[I]AVTOBV-APIMODE-AUTO\n[W]MAY BE BANED BY BILIBILI! CHANGE YOUR IP ADDR IF THAT HAPPENS!')
+print('[I]AVTOBV-APIMODE-AUTO\n[I]CHANGE YOUR IP ADDR IF BANED BY BILIBILI.')
 a = 0
 base = 'https://api.bilibili.com/x/web-interface/view?'
 ua = [
